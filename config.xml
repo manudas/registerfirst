@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>registerfirst</name>
+	<displayName><![CDATA[Modulo de registrese antes de entrar]]></displayName>
+	<version><![CDATA[0.1]]></version>
+	<description><![CDATA[M&oacute;dulo para importar los archivos extra&iacute;dos de EXCEL con productos a la tienda Bilyfer]]></description>
+	<author><![CDATA[Manuel Jos&eacute; Pulgar Anguita]]></author>
+	<tab><![CDATA[front_office_features]]></tab>
+	<confirmUninstall><![CDATA[¿Seguro que lo quiere desinstalar?]]></confirmUninstall>
+	<is_configurable>0</is_configurable>
+	<need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>

@@ -24,17 +24,18 @@ class AdminUserManagementController extends ModuleAdminController
         $this->bootstrap = true;
         $this->display = 'list';
         $this->meta_title = $this->l('Listado de usuarios');
+        parent::__construct();
         if (!$this->module->active)
             Tools::redirectAdmin($this->context->link->getAdminLink('AdminHome'));
         
-        parent::__construct();
+        
     }
 
     public function renderList(){
 
         $this->toolbar_title[] = $this->l('Listado de usuarios');
         
-        $fields_list = array(
+        $this -> fields_listfields_list = array(
             'orderId' => array(
                 'title' => $this->l('Id'),
                 //'width' => 140,
@@ -81,7 +82,7 @@ class AdminUserManagementController extends ModuleAdminController
 
         $helper->currentIndex = AdminController::$currentIndex.'&configure='.$this->module->name;
 
-        return $info.$helper->generateList(Interaction::getAllJobs(), $fields_list);
+        return parent::renderList();
     }
 
 }
